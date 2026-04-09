@@ -21,19 +21,32 @@ int fact(int n)
     return factorial;
 }
 
-int max_element(double arr[], int n)
+int max_element(double x[], int n)
 {
-    int max = arr[0];
+    int max = x[0];
     for (int i = 1; i < n; i++)
     {
-        if (arr[i] > max)
-            max = arr[i];
+        if (x[i] > max)
+            max = x[i];
     }
     return max;
 }
 
+int min_element(double x[],int n){
+
+    int min=x[0];
+    for (int i=0;i<n;i++){
+        if (min<x[i]) min=x[i];
+    }
+    return min;
+}
+
 int is_even(int n){
     return (n%2==0);
+}
+
+int is_odd(int n){
+    return (n%2!=0);
 }
 
 double addition(double x[], int n) { 

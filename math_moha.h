@@ -1,15 +1,15 @@
 #ifndef MYHEADER_H
 #define MYHEADER_H
 
-int is_prime(int n);
-int fact(int n);
-int max_element(int x[], int n);
-int min_element(int x[], int n);
-int is_even(int n);
-int is_odd(int n);
-double addition(double x[], int n);
-double subtraction(double x[], int n);
-double multiplication(double x[], int n);
-double division(double x[], int n);
+int is_prime(int n);// Done
+int fact(int n);// Done
+int max_element(double x[], int n);// Done
+int min_element(double x[], int n);// Done
+int is_even(int n);// Done
+int is_odd(int n);// Done
+double addition(double x[], int n);// Done
+double subtraction(double x[], int n);// Done
+double multiplication(double x[], int n);// Done
+double division(double x[], int n);// Done
 
 #endif
