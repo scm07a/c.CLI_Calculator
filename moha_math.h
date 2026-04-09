@@ -1,5 +1,5 @@
-#ifndef MYHEADER_H
-#define MYHEADER_H
+#ifndef MOHA_MATH_H
+#define MOHA_MATH_H
 
 int is_prime(int n);// Done
 int fact(int n);// Done

@@ -22,7 +22,7 @@ int main()
             printf("Enter How Many Numbers You Would Like To Use In The Calculator:");
             scanf("%d", &num_count);
             flush_buff();
-            mem_lim(num_count);
+            num_count=mem_lim(num_count);
             printf("Enter The Numbers:");
             for (int i = 0; i < num_count; i++){
                 scanf("%lf", &values[i]);
@@ -38,7 +38,7 @@ int main()
             printf("Enter How Many Numbers You Would Like To Use In The Calculator:");
             scanf("%d", &num_count);
             flush_buff();
-            mem_lim(num_count);
+            num_count=mem_lim(num_count);
             printf("Enter The Numbers:");
             for (int i = 0; i < num_count; i++){
                 scanf("%lf", &values[i]);
@@ -54,7 +54,7 @@ int main()
             printf("Enter How Many Numbers You Would Like To Use In The Calculator:");
             scanf("%d", &num_count);
             flush_buff();
-            mem_lim(num_count);
+            num_count=mem_lim(num_count);
             printf("Enter The Numbers:");
             for (int i = 0; i < num_count; i++){
                 scanf("%lf", &values[i]);
@@ -69,7 +69,8 @@ int main()
         {
             printf("Enter How Many Numbers You Would Like To Use In The Calculator:");
             scanf("%d", &num_count);
-            mem_lim(num_count);
+            flush_buff();
+            num_count=mem_lim(num_count);
             int valid = 1;
             printf("Enter The Numbers:");
             for (int i = 0; i < num_count; i++)
@@ -83,7 +84,7 @@ int main()
                     break;
                 }
             }
-            if (valid = 1)
+            if (valid == 1)
                 printf("%.2lf", division(values, num_count));
             wait_usr();
         }
@@ -120,7 +121,7 @@ int main()
             printf("Enter How Many Numbers You Would Like To Use In The Calculator:");
             scanf("%d", &num_count);
             flush_buff();
-            mem_lim(num_count);
+            num_count=mem_lim(num_count);
             printf("Enter The Numbers You Want To Check:");
             for (int i = 0; i < num_count; i++)
             {
@@ -130,7 +131,7 @@ int main()
             printf("Even Numbers Are:");
             for (int i = 0; i < num_count; i++)
             {
-                if (is_even(values[i]))
+                if (is_even((int)values[i]))
                     printf("[%.2lf] ", values[i]);
             }
             wait_usr();
@@ -149,7 +150,7 @@ int main()
             }
             printf("The Odd Numbers Are:");
             for (int i=0;i<num_count;i++){
-                if (is_odd(values[i]))
+                if (is_odd((int)values[i]))
                 printf("[%.2lf] ",values[i]);
             }
             wait_usr();

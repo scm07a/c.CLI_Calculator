@@ -1,5 +1,5 @@
-#ifndef MYHEADER_H
-#define MYHEADER_H
+#ifndef MOHA_UTILS_H
+#define MOHA_UTILS_H
 
 void wait_usr();
 void flush_buff();

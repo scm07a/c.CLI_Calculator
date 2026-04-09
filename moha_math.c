@@ -23,7 +23,7 @@ int fact(int n)
 
 int max_element(double x[], int n)
 {
-    int max = x[0];
+    double max = x[0];
     for (int i = 1; i < n; i++)
     {
         if (x[i] > max)
@@ -34,9 +34,9 @@ int max_element(double x[], int n)
 
 int min_element(double x[],int n){
 
-    int min=x[0];
+    double min=x[0];
     for (int i=0;i<n;i++){
-        if (min<x[i]) min=x[i];
+        if (x[i]<min) min=x[i];
     }
     return min;
 }
