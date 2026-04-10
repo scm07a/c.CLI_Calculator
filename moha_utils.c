@@ -16,7 +16,6 @@ int mem_lim(int n)
     {
         n = 999;
         printf("\nMaximum Capacity Reached!\n");
-        return 999;
     }
     return n;
 }

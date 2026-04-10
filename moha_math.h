@@ -7,6 +7,7 @@ int max_element(double x[], int n);// Done
 int min_element(double x[], int n);// Done
 int is_even(int n);// Done
 int is_odd(int n);// Done
+double power(int n);
 double addition(double x[], int n);// Done
 double subtraction(double x[], int n);// Done
 double multiplication(double x[], int n);// Done

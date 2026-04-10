@@ -49,6 +49,10 @@ int is_odd(int n){
     return (n%2!=0);
 }
 
+double power(double n){
+    return n*n;
+}
+
 double addition(double x[], int n) { 
     double sum = 0;
     for (int i = 0; i < n; i++)
