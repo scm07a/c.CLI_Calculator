@@ -185,7 +185,8 @@ int main()
 
         else
         {
-            printf("\nInvalid Input....Press Enter To Try Again\n");
+            printf("\nInvalid Input\n");
+            wait_usr();
 
         }
     }
