@@ -1,13 +1,16 @@
 #include <stdio.h>
 
-void wait_usr(){
+void wait_usr()
+{
     printf("\nPress Enter To Continue...\n\n");
     getchar();
 }
 
-void flush_buff(){
+void flush_buff()
+{
     int c;
-    while ((c=getchar())!='\n'&& c!=EOF);
+    while ((c = getchar()) != '\n' && c != EOF)
+        ;
 }
 
 int mem_lim(int n)

@@ -32,50 +32,62 @@ int max_element(double x[], int n)
     return max;
 }
 
-int min_element(double x[],int n){
+int min_element(double x[], int n)
+{
 
-    double min=x[0];
-    for (int i=0;i<n;i++){
-        if (x[i]<min) min=x[i];
+    double min = x[0];
+    for (int i = 0; i < n; i++)
+    {
+        if (x[i] < min)
+            min = x[i];
     }
     return min;
 }
 
-int is_even(int n){
-    return (n%2==0);
+int is_even(int n)
+{
+    return (n % 2 == 0);
 }
 
-int is_odd(int n){
-    return (n%2!=0);
+int is_odd(int n)
+{
+    return (n % 2 != 0);
 }
 
-double power(double n){
-    return n*n;
+double power(double n)
+{
+    return n * n;
 }
 
-double addition(double x[], int n) { 
+double addition(double x[], int n)
+{
     double sum = 0;
     for (int i = 0; i < n; i++)
         sum += x[i];
-    return sum; 
+    return sum;
 }
-double subtraction(double x[], int n) { 
-    if (n<=0) return 0;
-    double sub = x[0]; 
+double subtraction(double x[], int n)
+{
+    if (n <= 0)
+        return 0;
+    double sub = x[0];
     for (int i = 1; i < n; i++)
-        sub -= x[i]; 
-    return sub; 
+        sub -= x[i];
+    return sub;
 }
-double multiplication(double x[], int n) { 
-    double multiply = 1; 
+double multiplication(double x[], int n)
+{
+    double multiply = 1;
     for (int i = 0; i < n; i++)
-        multiply *= x[i]; 
-    return multiply; 
+        multiply *= x[i];
+    return multiply;
 }
-double division(double x[], int n) { 
-    if (n<=0) return 0;
-    double divide = x[0]; 
+double division(double x[], int n)
+{
+    if (n <= 0)
+        return 0;
+    double divide = x[0];
     for (int i = 1; i < n; i++)
-        divide /= x[i]; 
-    return divide; 
+        divide /= x[i];
+    return divide;
 }

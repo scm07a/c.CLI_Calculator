@@ -15,17 +15,18 @@ int main()
 
         if (choice == 0)
             printf("\nExiting Program...");
-            break;
+        break;
 
-        //Addition
+        // Addition
         if (choice == 1)
         {
             printf("Enter How Many Numbers You Would Like To Use In The Calculator:");
             scanf("%d", &num_count);
             flush_buff();
-            num_count=mem_lim(num_count);
+            num_count = mem_lim(num_count);
             printf("Enter The Numbers:");
-            for (int i = 0; i < num_count; i++){
+            for (int i = 0; i < num_count; i++)
+            {
                 scanf("%lf", &values[i]);
                 flush_buff();
             }
@@ -33,15 +34,16 @@ int main()
             wait_usr();
         }
 
-        //Subtraction
+        // Subtraction
         else if (choice == 2)
         {
             printf("Enter How Many Numbers You Would Like To Use In The Calculator:");
             scanf("%d", &num_count);
             flush_buff();
-            num_count=mem_lim(num_count);
+            num_count = mem_lim(num_count);
             printf("Enter The Numbers:");
-            for (int i = 0; i < num_count; i++){
+            for (int i = 0; i < num_count; i++)
+            {
                 scanf("%lf", &values[i]);
                 flush_buff();
             }
@@ -49,15 +51,16 @@ int main()
             wait_usr();
         }
 
-        //Multiplication
+        // Multiplication
         else if (choice == 3)
         {
             printf("Enter How Many Numbers You Would Like To Use In The Calculator:");
             scanf("%d", &num_count);
             flush_buff();
-            num_count=mem_lim(num_count);
+            num_count = mem_lim(num_count);
             printf("Enter The Numbers:");
-            for (int i = 0; i < num_count; i++){
+            for (int i = 0; i < num_count; i++)
+            {
                 scanf("%lf", &values[i]);
                 flush_buff();
             }
@@ -65,13 +68,13 @@ int main()
             wait_usr();
         }
 
-        //Division
+        // Division
         else if (choice == 4)
         {
             printf("Enter How Many Numbers You Would Like To Use In The Calculator:");
             scanf("%d", &num_count);
             flush_buff();
-            num_count=mem_lim(num_count);
+            num_count = mem_lim(num_count);
             int valid = 1;
             printf("Enter The Numbers:");
             for (int i = 0; i < num_count; i++)
@@ -90,7 +93,7 @@ int main()
             wait_usr();
         }
 
-        //Prime Checker
+        // Prime Checker
         else if (choice == 5)
         {
             printf("Enter The Number You Want To Check For Prime:");
@@ -103,7 +106,7 @@ int main()
             wait_usr();
         }
 
-        //Factorial
+        // Factorial
         else if (choice == 6)
         {
             printf("Enter The Number You Want To Find The Factorial Of:");
@@ -116,13 +119,13 @@ int main()
             wait_usr();
         }
 
-        //Even Checker
+        // Even Checker
         else if (choice == 7)
         {
             printf("Enter How Many Numbers You Would Like To Use In The Calculator:");
             scanf("%d", &num_count);
             flush_buff();
-            num_count=mem_lim(num_count);
+            num_count = mem_lim(num_count);
             printf("Enter The Numbers You Want To Check:");
             for (int i = 0; i < num_count; i++)
             {
@@ -138,56 +141,62 @@ int main()
             wait_usr();
         }
 
-        //Odd Checker
+        // Odd Checker
         else if (choice == 8)
         {
             printf("How Many Numbers You Would Like To Use In The Calculator:");
-            scanf("%d",&num_count);
+            scanf("%d", &num_count);
             flush_buff();
             printf("Enter The Numbers You Want To Check:");
-            for (int i=0;i<num_count;i++){
-            scanf("%lf",&values[i]);
-            flush_buff();
+            for (int i = 0; i < num_count; i++)
+            {
+                scanf("%lf", &values[i]);
+                flush_buff();
             }
             printf("The Odd Numbers Are:");
-            for (int i=0;i<num_count;i++){
+            for (int i = 0; i < num_count; i++)
+            {
                 if (is_odd((int)values[i]))
-                printf("[%.2lf] ",values[i]);
+                    printf("[%.2lf] ", values[i]);
             }
             wait_usr();
         }
 
-        //Max Number
-        else if(choice==9){
+        // Max Number
+        else if (choice == 9)
+        {
             printf("How Many Numbers You Would Like To Use In The Calculator:");
-            scanf("%d",&num_count);
+            scanf("%d", &num_count);
             printf("Enter The Numbers:");
-            for (int i=0;i<num_count;i++){
-                scanf("%lf",&values[i]);
+            for (int i = 0; i < num_count; i++)
+            {
+                scanf("%lf", &values[i]);
                 flush_buff();
             }
-            printf("The Max Number Is %d",max_element(values,num_count));
+            printf("The Max Number Is %d", max_element(values, num_count));
             wait_usr();
         }
 
-        //Min Number
-        else if (choice==10){
+        // Min Number
+        else if (choice == 10)
+        {
             printf("How Many Numbers You Would Like To Use In The Calculator:");
-            scanf("%d",&num_count);
+            scanf("%d", &num_count);
             printf("Enter The Numbers:");
-            for (int i=0;i<num_count;i++){
-                scanf("%lf",&values[i]);
+            for (int i = 0; i < num_count; i++)
+            {
+                scanf("%lf", &values[i]);
                 flush_buff();
             }
-            printf("The Min Number Is %d",min_element(values,num_count));
+            printf("The Min Number Is %d", min_element(values, num_count));
             wait_usr();
         }
 
+        //Invalid Choice Handling
         else
         {
             printf("\nInvalid Input\n");
             wait_usr();
-
         }
     }
     return 0;
