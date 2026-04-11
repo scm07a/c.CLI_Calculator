@@ -1,13 +1,16 @@
 # CLI_Calculator
 A command line interface calculator built in C to test to learn arrays functions and such.
 
+
 How To Compile:
 gcc calc_cli.c moha_math.c moha_utils.c -o name_prog
 
 How To Run:
+
 Powershell = name_prog
 
-Bash = ./name
+
+Bash = ./name_prog
 
 
 Features:
@@ -24,11 +27,12 @@ Example Layout:
 
 
 0.Exit
+
 1.Addition
 
 2.Subtraction
 
-3.######
+3......
 
 Choose Your Operation: 1
 
